@@ -24,6 +24,12 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <button
+              onClick={() => scrollToSection("storytelling")}
+              className="text-slate-600 hover:text-slate-800 transition-all duration-300 hover:scale-105"
+            >
+              Parcours
+            </button>
+            <button
               onClick={() => scrollToSection("formation")}
               className="text-slate-600 hover:text-slate-800 transition-all duration-300 hover:scale-105"
             >
@@ -46,6 +52,12 @@ export function Header() {
               className="text-slate-600 hover:text-slate-800 transition-all duration-300 hover:scale-105"
             >
               Centres d'intérêt
+            </button>
+            <button
+              onClick={() => scrollToSection("video")}
+              className="text-slate-600 hover:text-slate-800 transition-all duration-300 hover:scale-105"
+            >
+              Vidéo
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -83,6 +95,12 @@ export function Header() {
           <div className="md:hidden py-4 border-t border-slate-200/20 animate-fade-in-up">
             <div className="flex flex-col space-y-3">
               <button
+                onClick={() => scrollToSection("storytelling")}
+                className="text-left text-slate-600 hover:text-slate-800 transition-colors"
+              >
+                Parcours
+              </button>
+              <button
                 onClick={() => scrollToSection("formation")}
                 className="text-left text-slate-600 hover:text-slate-800 transition-colors"
               >
@@ -105,6 +123,12 @@ export function Header() {
                 className="text-left text-slate-600 hover:text-slate-800 transition-colors"
               >
                 Centres d'intérêt
+              </button>
+              <button
+                onClick={() => scrollToSection("video")}
+                className="text-left text-slate-600 hover:text-slate-800 transition-colors"
+              >
+                Vidéo
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

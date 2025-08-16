@@ -19,7 +19,7 @@ export const VideoSection = React.memo(function VideoSection() {
             <AspectRatio ratio={16 / 9}>
               <iframe
                 className="w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube-nocookie.com/embed/bA4P8yBdhGI?rel=0&modestbranding=1"
+                src="https://www.youtube-nocookie.com/embed/Uc2G8qFAh8o?rel=0&modestbranding=1"
                 title="Présentation vidéo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"

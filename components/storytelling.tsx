@@ -4,10 +4,10 @@ import React from "react"
 
 export const Storytelling = React.memo(function Storytelling() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="storytelling" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-black mb-6">Mon Parcours</h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-black mb-6">Mon Projet</h2>
           <div className="w-32 h-1 bg-black mx-auto rounded-full"></div>
         </div>
 
@@ -15,13 +15,13 @@ export const Storytelling = React.memo(function Storytelling() {
           <CardContent className="p-12">
             <div className="flex items-center justify-center mb-8">
               <div className="flex space-x-4">
-                <div className="p-3 bg-gray-100 rounded-xl">
+                <div className="p-3 bg-gray-100 rounded-xl transition-transform hover:scale-105">
                   <Grape className="w-8 h-8 text-black" />
                 </div>
-                <div className="p-3 bg-gray-100 rounded-xl">
+                <div className="p-3 bg-gray-100 rounded-xl transition-transform hover:scale-105">
                   <TrendingUp className="w-8 h-8 text-black" />
                 </div>
-                <div className="p-3 bg-gray-100 rounded-xl">
+                <div className="p-3 bg-gray-100 rounded-xl transition-transform hover:scale-105">
                   <Globe className="w-8 h-8 text-black" />
                 </div>
               </div>
@@ -29,7 +29,7 @@ export const Storytelling = React.memo(function Storytelling() {
 
             <div className="prose prose-lg max-w-none text-center">
               <p className="text-xl leading-relaxed text-gray-800 mb-6">
-                Passionné par l'innovation et fort d'un parcours alliant sciences agronomiques et commerce,
+                Actuellement en césure entre ma 4ème et 5ème année de ma formation alliant sciences agronomiques et commerce, passionné par l'innovation,
                 je souhaite contribuer activement à la{" "}
                 <span className="font-semibold text-black">modernisation de la viticulture française</span>.
               </p>

@@ -11,6 +11,8 @@ export function Hero() {
           fill
           className="object-cover"
           priority
+          quality={85}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/60"></div>
       </div>
@@ -30,18 +32,20 @@ export function Hero() {
             </div>
 
             <div className="animate-slide-in-right">
-              <div className="relative">
-                <div className="aspect-[4/5] rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20 flex items-center justify-center reflection-effect">
-                  <div className="text-center text-white/60">
-                    <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center mx-auto mb-4">
-                      <User className="w-6 h-6 text-white/60" />
-                    </div>
-                    <p className="text-2xl font-medium">Photo principale</p>
-                    <p className="text-base text-white/40">Portrait professionnel</p>
-                  </div>
+              <div className="relative flex justify-end">
+                <div className="relative w-96 h-96 rounded-full bg-white/5 backdrop-blur-sm border border-white/20 overflow-hidden reflection-effect">
+                  <Image
+                    src="/images/photoprofil.jpeg"
+                    alt="Portrait professionnel d'Etienne Getti"
+                    fill
+                    className="object-cover object-[center_30%]"
+                    priority
+                    quality={100}
+                    sizes="(max-width: 768px) 100vw, 384px"
+                  />
                 </div>
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-white/10 to-gray-400/10 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-white/5 to-gray-500/10 rounded-full blur-xl"></div>
+                <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-white/10 to-gray-400/10 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-gradient-to-br from-white/5 to-gray-500/10 rounded-full blur-xl"></div>
               </div>
             </div>
           </div>

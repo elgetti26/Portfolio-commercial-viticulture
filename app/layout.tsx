@@ -8,6 +8,7 @@ const playfair = Playfair_Display({
   display: "swap",
   variable: "--font-playfair",
   preload: true,
+  fallback: ["serif"],
 })
 
 const sourceSans = Source_Sans_3({
@@ -15,6 +16,7 @@ const sourceSans = Source_Sans_3({
   display: "swap",
   variable: "--font-source-sans",
   preload: true,
+  fallback: ["sans-serif"],
 })
 
 export const metadata: Metadata = {
@@ -72,8 +74,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body className={`${sourceSans.className} antialiased`}>
         {children}
